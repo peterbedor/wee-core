@@ -7,6 +7,10 @@ define(function(require) {
 	registerSuite({
 		name: 'Assets',
 
+		afterEach: function() {
+			Wee.$set('sampleJsLoaded', false);
+		},
+
 		// TODO: File path is relative to wee-core. Need solution that
 		// TODO: uses conditional path that works with Browsersync as well.
 		root: {
