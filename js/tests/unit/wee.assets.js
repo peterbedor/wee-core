@@ -9,6 +9,7 @@ define(function(require) {
 
 		afterEach: function() {
 			Wee.$set('sampleJsLoaded', false);
+			Wee.$set('sampleJsLoadedAgain', false);
 		},
 
 		// TODO: File path is relative to wee-core. Need solution that
